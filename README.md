@@ -21,7 +21,7 @@ The Deep Q-Network (DQN) agent operates within an EEG-based reinforcement learni
 - **Learning and Optimization:** The agent stores experiences (state, action, reward, next state) in memory and periodically samples from this memory to learn optimal policies. The DQN uses a neural network to approximate Q-values, estimating future rewards and updating its parameters through backpropagation and gradient descent.
 - **Goal:** The agent continuously improves its ability to predict correct emotional states from EEG signals by maximizing cumulative rewards over time.
 
-## Project Structure
+## Model Structure
 
 ```
 .
@@ -50,10 +50,6 @@ git clone <repository-url>
 cd eeg-dl-project
 ```
 
-Install dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ## Dependencies
 - Python 3.8+
