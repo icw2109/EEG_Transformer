@@ -42,14 +42,6 @@ The Deep Q-Network (DQN) agent operates within an EEG-based reinforcement learni
 └── README.md
 ```
 
-## Installation
-
-Clone the repository:
-```bash
-git clone <repository-url>
-cd eeg-dl-project
-```
-
 
 ## Dependencies
 - Python 3.8+
