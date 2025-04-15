@@ -3,6 +3,9 @@
 ## Overview
 This repository includes implementations of deep learning models (GRU, LSTM, EEGTransformer) for emotion recognition using EEG data (SEED IV Dataset) and an EEG-based reinforcement learning environment utilizing a Deep Q-Network (DQN). I created the transformer to test against previous standarads for emotional classification. The SEED IV dataset has been used for emtional classification using GRU and LSTM. I created the EEGTransformer in order to outperform these models which from initial training runs appeared to be successfull. The emotional classification comes from emotions identified while subjects were taking in varied media content. See SEED IV dataset for more details. 
 
+### Raw data is available here. 
+https://www.kaggle.com/datasets/phhasian0710/seed-iv
+
 ### EEGTransformer
 The EEGTransformer is a Transformer-based neural network specifically tailored to EEG data. EEG data consists of temporal sequences recorded across multiple electrodes. In the EEGTransformer:
 
