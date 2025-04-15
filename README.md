@@ -1,7 +1,7 @@
 # EEG Deep Learning and Reinforcement Learning Project
 
 ## Overview
-This repository includes implementations of deep learning models (GRU, LSTM, EEGTransformer) for emotion recognition using EEG data (SEED IV Dataset) and an EEG-based reinforcement learning environment utilizing a Deep Q-Network (DQN).
+This repository includes implementations of deep learning models (GRU, LSTM, EEGTransformer) for emotion recognition using EEG data (SEED IV Dataset) and an EEG-based reinforcement learning environment utilizing a Deep Q-Network (DQN). I created the transformer to test against previous standarads for emotional classification. The SEED IV dataset has been used for emtional classification using GRU and LSTM. I created the EEGTransformer in order to outperform these models which from initial training runs appeared to be successfull. The emotional classification comes from emotions identified while subjects were taking in varied media content. See SEED IV dataset for more details. 
 
 ### EEGTransformer
 The EEGTransformer is a Transformer-based neural network specifically tailored to EEG data. EEG data consists of temporal sequences recorded across multiple electrodes. In the EEGTransformer:
@@ -26,9 +26,9 @@ The Deep Q-Network (DQN) agent operates within an EEG-based reinforcement learni
 ```
 .
 ├── models
-│   ├── GRU
-│   ├── LSTM
-│   └── EEGTransformer
+  ├── GRU
+  ├── LSTM
+  └── EEGTransformer
 ├── reinforcement_learning
 │   ├── environment.py
 │   └── agent.py
@@ -38,9 +38,7 @@ The Deep Q-Network (DQN) agent operates within an EEG-based reinforcement learni
 │   ├── confusion_matrices
 │   ├── model_weights
 │   └── training_plots
-├── requirements.txt
-└── README.md
-```
+
 
 
 ## Dependencies
@@ -88,7 +86,7 @@ python train_dqn.py
 
 ## Results
 
-Trained models and plots including confusion matrices and accuracy/loss curves are stored under `output/`. Outputs are tested to be compared against baseline GRU and LSTM models.
+Trained models and plots including confusion matrices and accuracy/loss curves are stored under `output/`. Outputs are tested to be compared against baseline GRU and LSTM models. This transformer outperforms both the LSTM and GRU on test training runs, on a full training run I assume a significant increase in accuracy. 
 
 
 ---
